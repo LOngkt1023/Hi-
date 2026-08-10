@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Một lời chúc tốt nghiệp dành cho Tran Hanh.">
+  <title>Lời nhắn dành cho Tran Hanh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap">
+  <link rel="stylesheet" href="styles.css?v=11">
+  <script src="script.js?v=11" defer></script>
+</head>
+<body data-phase="gate">
+  <canvas class="bg-canvas" id="bgCanvas" aria-hidden="true"></canvas>
+  <button class="entry-gate" id="entryGate" type="button" aria-label="Bắt đầu trải nghiệm" hidden>
+    <span class="entry-gate__meta" aria-hidden="true">Graduation note · 01</span>
+    <span class="entry-gate__prompt" aria-hidden="true"><span class="entry-gate__text">Press any key to continue</span><span class="entry-gate__cursor">_</span></span>
+    <span class="visually-hidden">Chạm hoặc nhấn phím để bắt đầu và phát nhạc.</span>
+  </button>
+
+  <main class="experience">
+    <div class="petals" aria-hidden="true"></div>
+    <section class="intro" aria-labelledby="openingText">
+      <div class="intro__copy">
+        <p class="intro__eyebrow">
+          <span>Graduation note · 01</span>
+          <time datetime="2026-08-11">11 · 08 · 2026</time>
+        </p>
+        <h1 class="intro__title" id="openingText">
+          <span class="intro__title-line"><span>Có một lời nhắn</span></span>
+          <span class="intro__title-line"><span>dành cho</span></span>
+          <span class="intro__title-line intro__title-line--name"><span>Tran Hanh</span></span>
+        </h1>
+      </div>
+
+      <div class="marquee" aria-label="Một chương khép lại. Một chương mới bắt đầu.">
+        <div class="marquee__track">
+          <p class="marquee__group">Class of 2026 <span>✦</span> Một chương khép lại <span>✦</span> Một chương mới bắt đầu <span>✦</span></p>
+          <p class="marquee__group" aria-hidden="true">Class of 2026 <span>✦</span> Một chương khép lại <span>✦</span> Một chương mới bắt đầu <span>✦</span></p>
+        </div>
+      </div>
+
+      <button class="open-letter" id="startButton" type="button" aria-controls="letter" aria-expanded="false">
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope__back"></span>
+          <span class="envelope__letter"></span>
+          <span class="envelope__flap"></span>
+          <span class="envelope__front"></span>
+          <span class="envelope__seal"><span>♥</span></span>
+        </span>
+        <span class="open-letter__label">Chạm để mở</span>
+      </button>
+    </section>
+
+    <article class="letter" id="letter" tabindex="-1" aria-labelledby="letterTitle" aria-busy="false">
+      <span class="letter__sprig letter__sprig--top" aria-hidden="true"></span>
+      <span class="letter__sprig letter__sprig--bottom" aria-hidden="true"></span>
+
+      <header class="letter__header">
+        <h1 class="visually-hidden" id="letterTitle">Lời chúc tốt nghiệp dành cho Tran Hanh</h1>
+        <time class="date" datetime="2026-08-11">11 · 08 · 2026</time>
+        <span class="letter__rule" aria-hidden="true"><span>♥</span></span>
+      </header>
+
+      <div class="message" id="message">
+        <p class="message__line message__line--lead" data-pause="1050">Chúc mừng ai đó cuối cùng cũng đã tốt nghiệp nhé. Mong chặng đường phía trước của cậu sẽ luôn thật dịu dàng và ấm áp, đưa cậu đến những nơi cậu muốn đến, gặp những người khiến cậu vui và được làm những điều mà cậu thật sự yêu thích.</p>
+        <p class="message__line" data-pause="950">Mong sau này dù có đi xa đến đâu, cậu vẫn luôn có thật nhiều lý do để mỉm cười.</p>
+        <p class="message__line message__line--final" data-pause="650">See you tomorrow ♪</p>
+      </div>
+
+    </article>
+
+    <p class="visually-hidden" id="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <audio class="background-music" id="backgroundMusic" data-local-src="https://philia093.com/assets/NewPage-Cdk3jmGc.mp3" preload="metadata" loop aria-hidden="true"></audio>
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" hidden>Nhạc: Tắt</button>
+
+  <noscript>
+    <style>.intro .open-letter { display: none; }</style>
+  </noscript>
+</body>
+</html>
