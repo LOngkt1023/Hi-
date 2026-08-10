@@ -305,6 +305,7 @@ button:focus-visible,
   padding: 0.4em 0.1em;
   line-height: 1.3;
   margin-top: -0.3em;
+  transform: translateX(-0.25em); /* Optical centering for handwriting font */
 }
 
 .marquee {
