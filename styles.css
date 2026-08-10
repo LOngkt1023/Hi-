@@ -296,9 +296,13 @@ button:focus-visible,
 }
 
 .intro__title-line--name {
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 217, 149, 0.9);
-  letter-spacing: -0.045em;
+  color: #ffd995;
+  font-family: var(--font-hand);
+  font-size: 1.15em;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-shadow: 0 0 15px rgba(255, 217, 149, 0.4), 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding-top: 0.1em;
 }
 
 .marquee {
